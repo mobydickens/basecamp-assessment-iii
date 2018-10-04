@@ -4,8 +4,54 @@ body, html{
 }
 
 h1 {
-  background-color:	#eee9bf;
+  background-color:#e5f9f5;
   padding: 45px;
   margin: 0;
   font-family: 'Cutive Mono', monospace;
-};
+}
+
+.book-style-parent {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.book-style {
+  padding: 40px;
+  margin: 20px;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: #cccccc;
+  width: 250px;
+  
+
+}
+
+.genre-buttons {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.genre-buttons button {
+  width: 120px;
+  padding: 10px;
+  display: block;
+  background-color: white;
+  border-color: grey;
+  color: grey;
+}
+
+.genre-buttons button:hover {
+  color: black;
+  cursor: pointer
+}
+
+.genre-buttons button:focus {
+  outline: none;
+}
+
+.author-color {
+  color: #5e5e5e;
+}

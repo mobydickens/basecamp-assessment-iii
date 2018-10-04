@@ -40,9 +40,8 @@ class App extends Component {
       
       <div>
         <h1>The (extremely condensed) To Read Library</h1>
-        <button onClick={this.resetGenre}>All Genres</button>
-        <div>{genres.map(genre => <Genre genre={genre} getCurrentGenre={this.getCurrentGenre} key={genre} />)}</div>
-        <div>{this.state.filteredBooks.map(book => <Book book={book} key={book.title} />)}</div>
+        <div className="genre-buttons"><button onClick={this.resetGenre}>All Genres</button>{genres.map(genre => <Genre genre={genre} getCurrentGenre={this.getCurrentGenre} key={genre} />)}</div>
+        <div className="book-style-parent">{this.state.filteredBooks.map(book => <Book book={book} key={book.title} />)}</div>
       </div>
     );
   }
